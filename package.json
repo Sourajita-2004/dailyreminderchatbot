@@ -1,12 +1,15 @@
 {
   "name": "dailyreminderchatbot",
   "version": "1.0.0",
-  "description": "",
+  "description": "A chatbot to send daily reminders.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"Building the application...\" && exit 0"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["chatbot", "reminder", "daily"],
+  "author": "Your Name",
   "license": "ISC"
 }
+
+
