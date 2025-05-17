@@ -13,6 +13,13 @@
       "src": "/output/(.*)",
       "status": 200,
       "dest": "/fallback.html"
+    },
+    {
+      "src": "/output/(.*)",
+      "dest": "/output/$1"
+    },
+    {
+     "cleanUrls": true
     }
   ]
 }
