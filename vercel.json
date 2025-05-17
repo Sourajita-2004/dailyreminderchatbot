@@ -18,8 +18,6 @@
       "src": "/output/(.*)",
       "dest": "/output/$1"
     },
-    {
-     "cleanUrls": true
-    }
+    
   ]
 }
