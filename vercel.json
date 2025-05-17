@@ -1,0 +1,18 @@
+{
+  "rewrites": [
+    {
+      "source": "/output/:file*",
+      "destination": "/output/:file*"
+    }
+  ],
+  "routes": [
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/output/(.*)",
+      "status": 200,
+      "dest": "/fallback.html"
+    }
+  ]
+}
