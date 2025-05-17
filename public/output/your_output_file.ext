@@ -1,0 +1,18 @@
+import os
+import shutil
+
+# Step 1: Create a file (example: text file)
+output_filename = "sample_output.txt"
+with open(output_filename, "w") as file:
+    file.write("Hello from your chatbot! This file is now public.")
+
+# Step 2: Move the file to public/output/ for Vercel
+public_output_path = os.path.join("..", "public", "output", output_filename)
+
+# Ensure the destination directory exists
+os.makedirs(os.path.dirname(public_output_path), exist_ok=True)
+
+# Move the file
+shutil.move(output_filename, public_output_path)
+
+print(f"File moved to {public_output_path}")
