@@ -17,7 +17,7 @@
     {
       "src": "/output/(.*)",
       "dest": "/output/$1"
-    },
+    }
     
   ]
 }
